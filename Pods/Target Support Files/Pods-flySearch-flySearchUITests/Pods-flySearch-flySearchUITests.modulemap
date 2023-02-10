@@ -1,0 +1,6 @@
+framework module Pods_flySearch_flySearchUITests {
+  umbrella header "Pods-flySearch-flySearchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

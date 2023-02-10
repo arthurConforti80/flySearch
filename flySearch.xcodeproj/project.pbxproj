@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D19ED4A7F3B1892CCF7167E /* Pods_flySearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5F981B159AAAFEDCE7AABD /* Pods_flySearchTests.framework */; };
+		D1A4D511B4F4492E4024833E /* Pods_flySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F0BDAE6F58E3DAEBBCAC78 /* Pods_flySearch.framework */; };
+		DE6A6DA6298AF6AC00E74278 /* FlightDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DA2298AF6AC00E74278 /* FlightDetailViewModel.swift */; };
+		DE6A6DA7298AF6AC00E74278 /* FlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DA3298AF6AC00E74278 /* FlightDetailViewController.swift */; };
+		DE6A6DA8298AF6AC00E74278 /* FlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DA5298AF6AC00E74278 /* FlightModel.swift */; };
+		DE6A6DB2298AF6C900E74278 /* StationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DAA298AF6C900E74278 /* StationsModel.swift */; };
+		DE6A6DB6298AF6C900E74278 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DB0298AF6C900E74278 /* HomeViewModel.swift */; };
+		DE6A6DB7298AF6C900E74278 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DB1298AF6C900E74278 /* HomeViewController.swift */; };
+		DE6A6DBF298AF6E600E74278 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DBA298AF6E600E74278 /* UITableView.swift */; };
+		DE6A6DC2298AF6E600E74278 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DBD298AF6E600E74278 /* Helpers.swift */; };
+		DE6A6DC8298AF6F600E74278 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A6DC5298AF6F600E74278 /* MainCoordinator.swift */; };
+		DE6A6DCD298B1D7400E74278 /* listStations.json in Resources */ = {isa = PBXBuildFile; fileRef = DE6A6DCB298B1D7400E74278 /* listStations.json */; };
+		DE6A6DCE298B1D7400E74278 /* listFlights.json in Resources */ = {isa = PBXBuildFile; fileRef = DE6A6DCC298B1D7400E74278 /* listFlights.json */; };
+		DE8259A32992E6C1006ED763 /* TravelDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8259A22992E6C1006ED763 /* TravelDetailTableViewCell.swift */; };
+		DED20CE82996C93700E1C61C /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED20CE72996C93700E1C61C /* Calendar.swift */; };
+		DEDC19712995762400DC125D /* VPAutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC196E2995762400DC125D /* VPAutoComplete.swift */; };
+		DEDC19722995762400DC125D /* VPAutoCompleteViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDC196F2995762400DC125D /* VPAutoCompleteViewCell.xib */; };
+		DEDC19732995762400DC125D /* VPAutoCompleteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC19702995762400DC125D /* VPAutoCompleteViewCell.swift */; };
+		DEE20E14298AF2F9009ACE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E13298AF2F9009ACE5D /* AppDelegate.swift */; };
+		DEE20E16298AF2F9009ACE5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E15298AF2F9009ACE5D /* SceneDelegate.swift */; };
+		DEE20E18298AF2F9009ACE5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E17298AF2F9009ACE5D /* ViewController.swift */; };
+		DEE20E1D298AF2FB009ACE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE20E1C298AF2FB009ACE5D /* Assets.xcassets */; };
+		DEE20E20298AF2FB009ACE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE20E1E298AF2FB009ACE5D /* LaunchScreen.storyboard */; };
+		DEE20E2B298AF2FB009ACE5D /* flySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E2A298AF2FB009ACE5D /* flySearchTests.swift */; };
+		DEE20E35298AF2FB009ACE5D /* flySearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E34298AF2FB009ACE5D /* flySearchUITests.swift */; };
+		DEE20E37298AF2FB009ACE5D /* flySearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E36298AF2FB009ACE5D /* flySearchUITestsLaunchTests.swift */; };
+		F667376EEA6D9250CEDD018D /* Pods_flySearch_flySearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8778B8C4EE00BF91BC173A6 /* Pods_flySearch_flySearchUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEE20E27298AF2FB009ACE5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE20E08298AF2F9009ACE5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEE20E0F298AF2F9009ACE5D;
+			remoteInfo = flySearch;
+		};
+		DEE20E31298AF2FB009ACE5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE20E08298AF2F9009ACE5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEE20E0F298AF2F9009ACE5D;
+			remoteInfo = flySearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E9576A5A1B02901E085A5BB /* Pods-flySearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flySearchTests.release.xcconfig"; path = "Target Support Files/Pods-flySearchTests/Pods-flySearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D5F981B159AAAFEDCE7AABD /* Pods_flySearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flySearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4936D7C6993A38E1FAB2D4E0 /* Pods-flySearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flySearchTests.debug.xcconfig"; path = "Target Support Files/Pods-flySearchTests/Pods-flySearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		505A4CDD4C5DAA92735CD7AA /* Pods-flySearch-flySearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flySearch-flySearchUITests.release.xcconfig"; path = "Target Support Files/Pods-flySearch-flySearchUITests/Pods-flySearch-flySearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		99599E3238E2A41209EE5263 /* Pods-flySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flySearch.release.xcconfig"; path = "Target Support Files/Pods-flySearch/Pods-flySearch.release.xcconfig"; sourceTree = "<group>"; };
+		A6E05B83C0CB3507695DE4BD /* Pods-flySearch-flySearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flySearch-flySearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-flySearch-flySearchUITests/Pods-flySearch-flySearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6F0BDAE6F58E3DAEBBCAC78 /* Pods_flySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8778B8C4EE00BF91BC173A6 /* Pods_flySearch_flySearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flySearch_flySearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6A6DA2298AF6AC00E74278 /* FlightDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDetailViewModel.swift; sourceTree = "<group>"; };
+		DE6A6DA3298AF6AC00E74278 /* FlightDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDetailViewController.swift; sourceTree = "<group>"; };
+		DE6A6DA5298AF6AC00E74278 /* FlightModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightModel.swift; sourceTree = "<group>"; };
+		DE6A6DAA298AF6C900E74278 /* StationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsModel.swift; sourceTree = "<group>"; };
+		DE6A6DB0298AF6C900E74278 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DE6A6DB1298AF6C900E74278 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DE6A6DBA298AF6E600E74278 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		DE6A6DBD298AF6E600E74278 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DE6A6DC5298AF6F600E74278 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		DE6A6DCB298B1D7400E74278 /* listStations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listStations.json; sourceTree = "<group>"; };
+		DE6A6DCC298B1D7400E74278 /* listFlights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listFlights.json; sourceTree = "<group>"; };
+		DE8259A22992E6C1006ED763 /* TravelDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailTableViewCell.swift; sourceTree = "<group>"; };
+		DED20CE72996C93700E1C61C /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		DEDC196E2995762400DC125D /* VPAutoComplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPAutoComplete.swift; sourceTree = "<group>"; };
+		DEDC196F2995762400DC125D /* VPAutoCompleteViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VPAutoCompleteViewCell.xib; sourceTree = "<group>"; };
+		DEDC19702995762400DC125D /* VPAutoCompleteViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPAutoCompleteViewCell.swift; sourceTree = "<group>"; };
+		DEE20E10298AF2F9009ACE5D /* flySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE20E13298AF2F9009ACE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEE20E15298AF2F9009ACE5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEE20E17298AF2F9009ACE5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEE20E1C298AF2FB009ACE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEE20E1F298AF2FB009ACE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEE20E21298AF2FB009ACE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE20E26298AF2FB009ACE5D /* flySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE20E2A298AF2FB009ACE5D /* flySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flySearchTests.swift; sourceTree = "<group>"; };
+		DEE20E30298AF2FB009ACE5D /* flySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE20E34298AF2FB009ACE5D /* flySearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flySearchUITests.swift; sourceTree = "<group>"; };
+		DEE20E36298AF2FB009ACE5D /* flySearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flySearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF47516027AD8EE7C6F92623 /* Pods-flySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flySearch.debug.xcconfig"; path = "Target Support Files/Pods-flySearch/Pods-flySearch.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEE20E0D298AF2F9009ACE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A4D511B4F4492E4024833E /* Pods_flySearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE20E23298AF2FB009ACE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D19ED4A7F3B1892CCF7167E /* Pods_flySearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE20E2D298AF2FB009ACE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F667376EEA6D9250CEDD018D /* Pods_flySearch_flySearchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797AEBFC129F18DFCA343EE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF47516027AD8EE7C6F92623 /* Pods-flySearch.debug.xcconfig */,
+				99599E3238E2A41209EE5263 /* Pods-flySearch.release.xcconfig */,
+				A6E05B83C0CB3507695DE4BD /* Pods-flySearch-flySearchUITests.debug.xcconfig */,
+				505A4CDD4C5DAA92735CD7AA /* Pods-flySearch-flySearchUITests.release.xcconfig */,
+				4936D7C6993A38E1FAB2D4E0 /* Pods-flySearchTests.debug.xcconfig */,
+				2E9576A5A1B02901E085A5BB /* Pods-flySearchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1A4E9E7E94E5E09A97152C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6F0BDAE6F58E3DAEBBCAC78 /* Pods_flySearch.framework */,
+				B8778B8C4EE00BF91BC173A6 /* Pods_flySearch_flySearchUITests.framework */,
+				3D5F981B159AAAFEDCE7AABD /* Pods_flySearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE6A6D9D298AF52A00E74278 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DC5298AF6F600E74278 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		DE6A6D9E298AF59600E74278 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DEDC196C2995762400DC125D /* Common */,
+				DE6A6DB8298AF6E600E74278 /* Extensions */,
+				DE6A6DBD298AF6E600E74278 /* Helpers.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE6A6D9F298AF5A000E74278 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DA9298AF6C900E74278 /* Model */,
+				DE6A6DAB298AF6C900E74278 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE6A6DA0298AF5AE00E74278 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DA4298AF6AC00E74278 /* Model */,
+				DE6A6DA1298AF6AC00E74278 /* Views */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		DE6A6DA1298AF6AC00E74278 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE8259A12992E6A4006ED763 /* Cells */,
+				DE6A6DA2298AF6AC00E74278 /* FlightDetailViewModel.swift */,
+				DE6A6DA3298AF6AC00E74278 /* FlightDetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE6A6DA4298AF6AC00E74278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DA5298AF6AC00E74278 /* FlightModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE6A6DA9298AF6C900E74278 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DAA298AF6C900E74278 /* StationsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE6A6DAB298AF6C900E74278 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DB0298AF6C900E74278 /* HomeViewModel.swift */,
+				DE6A6DB1298AF6C900E74278 /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE6A6DB8298AF6E600E74278 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DBA298AF6E600E74278 /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE6A6DCA298B1D7400E74278 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DCB298B1D7400E74278 /* listStations.json */,
+				DE6A6DCC298B1D7400E74278 /* listFlights.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE8259A12992E6A4006ED763 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE8259A22992E6C1006ED763 /* TravelDetailTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DED20CE92996C99600E1C61C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DED20CE72996C93700E1C61C /* Calendar.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DEDC196C2995762400DC125D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DED20CE92996C99600E1C61C /* Calendar */,
+				DEDC196D2995762400DC125D /* VPAutoComplete-Source */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DEDC196D2995762400DC125D /* VPAutoComplete-Source */ = {
+			isa = PBXGroup;
+			children = (
+				DEDC196E2995762400DC125D /* VPAutoComplete.swift */,
+				DEDC196F2995762400DC125D /* VPAutoCompleteViewCell.xib */,
+				DEDC19702995762400DC125D /* VPAutoCompleteViewCell.swift */,
+			);
+			path = "VPAutoComplete-Source";
+			sourceTree = "<group>";
+		};
+		DEE20E07298AF2F9009ACE5D = {
+			isa = PBXGroup;
+			children = (
+				DEE20E12298AF2F9009ACE5D /* flySearch */,
+				DEE20E29298AF2FB009ACE5D /* flySearchTests */,
+				DEE20E33298AF2FB009ACE5D /* flySearchUITests */,
+				DEE20E11298AF2F9009ACE5D /* Products */,
+				797AEBFC129F18DFCA343EE4 /* Pods */,
+				C1A4E9E7E94E5E09A97152C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEE20E11298AF2F9009ACE5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEE20E10298AF2F9009ACE5D /* flySearch.app */,
+				DEE20E26298AF2FB009ACE5D /* flySearchTests.xctest */,
+				DEE20E30298AF2FB009ACE5D /* flySearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEE20E12298AF2F9009ACE5D /* flySearch */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A6DCA298B1D7400E74278 /* Resources */,
+				DE6A6DA0298AF5AE00E74278 /* Details */,
+				DE6A6D9F298AF5A000E74278 /* Home */,
+				DE6A6D9E298AF59600E74278 /* Core */,
+				DE6A6D9D298AF52A00E74278 /* Coordinators */,
+				DEE20E13298AF2F9009ACE5D /* AppDelegate.swift */,
+				DEE20E15298AF2F9009ACE5D /* SceneDelegate.swift */,
+				DEE20E17298AF2F9009ACE5D /* ViewController.swift */,
+				DEE20E1C298AF2FB009ACE5D /* Assets.xcassets */,
+				DEE20E1E298AF2FB009ACE5D /* LaunchScreen.storyboard */,
+				DEE20E21298AF2FB009ACE5D /* Info.plist */,
+			);
+			path = flySearch;
+			sourceTree = "<group>";
+		};
+		DEE20E29298AF2FB009ACE5D /* flySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEE20E2A298AF2FB009ACE5D /* flySearchTests.swift */,
+			);
+			path = flySearchTests;
+			sourceTree = "<group>";
+		};
+		DEE20E33298AF2FB009ACE5D /* flySearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEE20E34298AF2FB009ACE5D /* flySearchUITests.swift */,
+				DEE20E36298AF2FB009ACE5D /* flySearchUITestsLaunchTests.swift */,
+			);
+			path = flySearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEE20E0F298AF2F9009ACE5D /* flySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE20E3A298AF2FB009ACE5D /* Build configuration list for PBXNativeTarget "flySearch" */;
+			buildPhases = (
+				D7E3E444DA195C10AF87076E /* [CP] Check Pods Manifest.lock */,
+				DEE20E0C298AF2F9009ACE5D /* Sources */,
+				DEE20E0D298AF2F9009ACE5D /* Frameworks */,
+				DEE20E0E298AF2F9009ACE5D /* Resources */,
+				4168B5C1FC4D5D5A4B3D5861 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flySearch;
+			productName = flySearch;
+			productReference = DEE20E10298AF2F9009ACE5D /* flySearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEE20E25298AF2FB009ACE5D /* flySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE20E3D298AF2FB009ACE5D /* Build configuration list for PBXNativeTarget "flySearchTests" */;
+			buildPhases = (
+				257B62AAF8492BF83CC54799 /* [CP] Check Pods Manifest.lock */,
+				DEE20E22298AF2FB009ACE5D /* Sources */,
+				DEE20E23298AF2FB009ACE5D /* Frameworks */,
+				DEE20E24298AF2FB009ACE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE20E28298AF2FB009ACE5D /* PBXTargetDependency */,
+			);
+			name = flySearchTests;
+			productName = flySearchTests;
+			productReference = DEE20E26298AF2FB009ACE5D /* flySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEE20E2F298AF2FB009ACE5D /* flySearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE20E40298AF2FB009ACE5D /* Build configuration list for PBXNativeTarget "flySearchUITests" */;
+			buildPhases = (
+				1146E2C79FBEDA09D36A1682 /* [CP] Check Pods Manifest.lock */,
+				DEE20E2C298AF2FB009ACE5D /* Sources */,
+				DEE20E2D298AF2FB009ACE5D /* Frameworks */,
+				DEE20E2E298AF2FB009ACE5D /* Resources */,
+				C1C2CF34626C22F7C688B2C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE20E32298AF2FB009ACE5D /* PBXTargetDependency */,
+			);
+			name = flySearchUITests;
+			productName = flySearchUITests;
+			productReference = DEE20E30298AF2FB009ACE5D /* flySearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEE20E08298AF2F9009ACE5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					DEE20E0F298AF2F9009ACE5D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					DEE20E25298AF2FB009ACE5D = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = DEE20E0F298AF2F9009ACE5D;
+					};
+					DEE20E2F298AF2FB009ACE5D = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = DEE20E0F298AF2F9009ACE5D;
+					};
+				};
+			};
+			buildConfigurationList = DEE20E0B298AF2F9009ACE5D /* Build configuration list for PBXProject "flySearch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEE20E07298AF2F9009ACE5D;
+			productRefGroup = DEE20E11298AF2F9009ACE5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEE20E0F298AF2F9009ACE5D /* flySearch */,
+				DEE20E25298AF2FB009ACE5D /* flySearchTests */,
+				DEE20E2F298AF2FB009ACE5D /* flySearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEE20E0E298AF2F9009ACE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDC19722995762400DC125D /* VPAutoCompleteViewCell.xib in Resources */,
+				DEE20E20298AF2FB009ACE5D /* LaunchScreen.storyboard in Resources */,
+				DE6A6DCE298B1D7400E74278 /* listFlights.json in Resources */,
+				DEE20E1D298AF2FB009ACE5D /* Assets.xcassets in Resources */,
+				DE6A6DCD298B1D7400E74278 /* listStations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE20E24298AF2FB009ACE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE20E2E298AF2FB009ACE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1146E2C79FBEDA09D36A1682 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flySearch-flySearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		257B62AAF8492BF83CC54799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flySearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4168B5C1FC4D5D5A4B3D5861 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flySearch/Pods-flySearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flySearch/Pods-flySearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flySearch/Pods-flySearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C2CF34626C22F7C688B2C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flySearch-flySearchUITests/Pods-flySearch-flySearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flySearch-flySearchUITests/Pods-flySearch-flySearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flySearch-flySearchUITests/Pods-flySearch-flySearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E3E444DA195C10AF87076E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flySearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEE20E0C298AF2F9009ACE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE20E18298AF2F9009ACE5D /* ViewController.swift in Sources */,
+				DEE20E14298AF2F9009ACE5D /* AppDelegate.swift in Sources */,
+				DEE20E16298AF2F9009ACE5D /* SceneDelegate.swift in Sources */,
+				DE8259A32992E6C1006ED763 /* TravelDetailTableViewCell.swift in Sources */,
+				DE6A6DB6298AF6C900E74278 /* HomeViewModel.swift in Sources */,
+				DE6A6DB2298AF6C900E74278 /* StationsModel.swift in Sources */,
+				DE6A6DA6298AF6AC00E74278 /* FlightDetailViewModel.swift in Sources */,
+				DE6A6DB7298AF6C900E74278 /* HomeViewController.swift in Sources */,
+				DE6A6DA8298AF6AC00E74278 /* FlightModel.swift in Sources */,
+				DE6A6DC2298AF6E600E74278 /* Helpers.swift in Sources */,
+				DE6A6DBF298AF6E600E74278 /* UITableView.swift in Sources */,
+				DE6A6DC8298AF6F600E74278 /* MainCoordinator.swift in Sources */,
+				DE6A6DA7298AF6AC00E74278 /* FlightDetailViewController.swift in Sources */,
+				DED20CE82996C93700E1C61C /* Calendar.swift in Sources */,
+				DEDC19732995762400DC125D /* VPAutoCompleteViewCell.swift in Sources */,
+				DEDC19712995762400DC125D /* VPAutoComplete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE20E22298AF2FB009ACE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE20E2B298AF2FB009ACE5D /* flySearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE20E2C298AF2FB009ACE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE20E37298AF2FB009ACE5D /* flySearchUITestsLaunchTests.swift in Sources */,
+				DEE20E35298AF2FB009ACE5D /* flySearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEE20E28298AF2FB009ACE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEE20E0F298AF2F9009ACE5D /* flySearch */;
+			targetProxy = DEE20E27298AF2FB009ACE5D /* PBXContainerItemProxy */;
+		};
+		DEE20E32298AF2FB009ACE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEE20E0F298AF2F9009ACE5D /* flySearch */;
+			targetProxy = DEE20E31298AF2FB009ACE5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEE20E1E298AF2FB009ACE5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE20E1F298AF2FB009ACE5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEE20E38298AF2FB009ACE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEE20E39298AF2FB009ACE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEE20E3B298AF2FB009ACE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF47516027AD8EE7C6F92623 /* Pods-flySearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535586Q8M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = flySearch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CI-T.flySearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEE20E3C298AF2FB009ACE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99599E3238E2A41209EE5263 /* Pods-flySearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535586Q8M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = flySearch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CI-T.flySearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEE20E3E298AF2FB009ACE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4936D7C6993A38E1FAB2D4E0 /* Pods-flySearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535586Q8M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CI-T.flySearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flySearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/flySearch";
+			};
+			name = Debug;
+		};
+		DEE20E3F298AF2FB009ACE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9576A5A1B02901E085A5BB /* Pods-flySearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535586Q8M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CI-T.flySearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flySearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/flySearch";
+			};
+			name = Release;
+		};
+		DEE20E41298AF2FB009ACE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E05B83C0CB3507695DE4BD /* Pods-flySearch-flySearchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535586Q8M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CI-T.flySearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = flySearch;
+			};
+			name = Debug;
+		};
+		DEE20E42298AF2FB009ACE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505A4CDD4C5DAA92735CD7AA /* Pods-flySearch-flySearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 535586Q8M7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CI-T.flySearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = flySearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEE20E0B298AF2F9009ACE5D /* Build configuration list for PBXProject "flySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE20E38298AF2FB009ACE5D /* Debug */,
+				DEE20E39298AF2FB009ACE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE20E3A298AF2FB009ACE5D /* Build configuration list for PBXNativeTarget "flySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE20E3B298AF2FB009ACE5D /* Debug */,
+				DEE20E3C298AF2FB009ACE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE20E3D298AF2FB009ACE5D /* Build configuration list for PBXNativeTarget "flySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE20E3E298AF2FB009ACE5D /* Debug */,
+				DEE20E3F298AF2FB009ACE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE20E40298AF2FB009ACE5D /* Build configuration list for PBXNativeTarget "flySearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE20E41298AF2FB009ACE5D /* Debug */,
+				DEE20E42298AF2FB009ACE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEE20E08298AF2F9009ACE5D /* Project object */;
+}
